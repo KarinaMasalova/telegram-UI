@@ -1,0 +1,164 @@
+:root {
+  --header-bg-color: #5682a3;
+  --header-bg-color-hover: #497799;
+  --header-padding: 17px 20px 17px 20px;
+  --header-font: 13px Tahoma, sans-serif, Arial, Helvetica;
+  --header-status-color: #b9cfe3;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+/* HEADER */
+
+.sidebar {
+  display: flex;
+  max-width: 1010px;
+  margin: 0 auto;
+  height: 48px;
+  background: var(--header-bg-color);
+}
+
+.tg-title {
+  display: flex;
+  padding: var(--header-padding);
+  width: 27%;
+}
+
+.tg-title:hover {
+  background-color: var(--header-bg-color-hover);
+  cursor: pointer;
+}
+
+.burger {
+  position: relative;
+  margin: auto 0;
+  background-color: #fff;
+  width: 18px;
+  height: 2px;
+}
+
+.burger::before,
+.burger::after {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+
+.burger::before {
+  bottom: 6px;
+}
+
+.burger::after {
+  top: 6px;
+}
+
+.icon-back {
+  display: none;
+  width: 15px;
+  height: 20px;
+  background-image: url(./src/img/header-arrow-back.png);
+  background-repeat: no-repeat;
+}
+
+.tg-logo {
+  margin-left: 40px;
+  width: 62px;
+  height: 14px;
+  display: inline-block;
+  background-image: url(./src/img/Telegram.svg);
+  background-repeat: no-repeat;
+}
+
+.tg-dialog {
+  display: flex;
+  justify-content: space-between;
+  width: 73%;
+}
+
+.dialog-title {
+  display: flex;
+  padding: var(--header-padding);
+}
+
+.dialog-name p {
+  margin-right: 4px;
+  max-width: 180px;
+  display: inline-block;
+  font: var(--header-font);
+  font-weight: bold;
+  color: #fff;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.status {
+  margin-left: 4px;
+  color: var(--header-status-color);
+  font: var(--header-font);
+}
+
+.header-icons {
+  display: flex;
+}
+
+.header-search {
+  padding: 15px 24px;
+  background-image: url(./src/img/header-search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.more {
+  padding: 16px 24px;
+  background-image: url(./src/img/header-more.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tg-user-photo {
+  padding: 6px 14px;
+}
+
+.user-photo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+/* MAIN */
+
+
+/* media */
+
+@media (max-width: 654px) {
+  .burger,
+  .tg-logo, 
+  .header-search {
+    display: none;
+  }
+
+  .icon-back {
+    display: flex;
+  }
+
+  .tg-title {
+    padding: 14px 10px;
+    width: 5%;
+  }
+
+  .tg-dialog {
+    width: 95%;
+  }
+
+  .dialog-title {
+    flex-direction: column;
+    padding: 5px 0;
+  }
+}
