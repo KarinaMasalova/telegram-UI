@@ -123,6 +123,7 @@
 }
 
 .tg-user-photo {
+  display: none;
   padding: 6px 14px;
 }
 
@@ -144,7 +145,8 @@
     display: none;
   }
 
-  .icon-back {
+  .icon-back,
+  .tg-user-photo {
     display: flex;
   }
 
