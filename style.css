@@ -1,14 +1,21 @@
 :root {
+  --body-bg-color: #d7dbe1;
   --header-bg-color: #5682a3;
   --header-bg-color-hover: #497799;
   --header-padding: 17px 20px 17px 20px;
   --header-font: 13px Tahoma, sans-serif, Arial, Helvetica;
   --header-status-color: #b9cfe3;
+  --search-panel-bg: #f2f2f2;
+  --search-panel-font: 12px Tahoma, sans-serif, Arial, Helvetica;
+}
+
+body {
+  background-color: var(--body-bg-color);
 }
 
 .wrapper {
   margin: 0 auto;
-  max-width: 1024px;
+  max-width: 1010px;
 }
 
 /* HEADER */
@@ -135,6 +142,54 @@
 
 /* MAIN */
 
+.main-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+
+.dialogs-section {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-panel {
+  background-color: var(--search-panel-bg);
+  height: 34px;
+  border: none;
+  font-size: 12px;
+  font: var(--search-panel-font);
+  border-radius: 2px;
+  border: 1px solid var(--search-panel-bg);
+  padding: 6px 26px;
+  margin: 12px;
+  background-image: url(./src/img/dialogs-search.svg);
+  background-repeat: no-repeat;
+  background-position: 4px 7px;
+}
+
+.search-panel::-webkit-input-placeholder {
+  color: #CCC;
+}
+
+.search-panel:focus {
+  background-color: #fff;
+  outline: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  background: url(./src/img/reset-btn.png);
+  background-repeat: no-repeat;
+  background-position: 7px 3px;
+}
+
+.opened-dialogs {
+  width: 70%;
+}
 
 /* media */
 
