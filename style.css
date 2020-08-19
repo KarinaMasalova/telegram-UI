@@ -73,7 +73,7 @@ body {
   display: none;
   width: 15px;
   height: 20px;
-  background-image: url(./src/img/header-arrow-back.png);
+  background-image: url(./src/img/icons/header-arrow-back.png);
   background-repeat: no-repeat;
 }
 
@@ -121,14 +121,14 @@ body {
 
 .header-search {
   padding: 15px 24px;
-  background-image: url(./src/img/header-search.svg);
+  background-image: url(./src/img/icons/header-search.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .more {
   padding: 16px 24px;
-  background-image: url(./src/img/header-more.png);
+  background-image: url(./src/img/icons/header-more.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -213,7 +213,7 @@ body {
   border: 1px solid var(--search-panel-bg);
   padding: 6px 26px;
   margin: 12px;
-  background-image: url(./src/img/dialogs-search.svg);
+  background-image: url(./src/img/icons/dialogs-search.svg);
   background-repeat: no-repeat;
   background-position: 4px 7px;
 }
@@ -231,7 +231,7 @@ input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
   width: 20px;
   height: 20px;
-  background: url(./src/img/reset-btn.png);
+  background: url(./src/img/icons/reset-btn.png);
   background-repeat: no-repeat;
   background-position: 7px 3px;
   cursor: pointer;
