@@ -373,7 +373,6 @@ input[type="search"]::-webkit-search-cancel-button {
 .panel-send {
   height: auto;
   width: 100%;
-  position: relative;
   border: 0;
   box-shadow: 0 1px 0 0 #e8e8e8;
   overflow-x: hidden;
@@ -382,21 +381,15 @@ input[type="search"]::-webkit-search-cancel-button {
   min-height: 52px;
   line-height: 20px;
   box-sizing: border-box;
-
+  background-image: url(./src/img/icons/message-panel-smile.png);
+  background-repeat: no-repeat;
+  background-position: 98% 0;
 }
 
 .panel-send:focus {
   border: 0;
   outline: none;
   box-shadow: 0 2px 0 0 #77b7e4;
-}
-
-.panel-smile-icon {
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  background-image: url(./src/img/icons/message-panel-smile.png);
-  background-repeat: no-repeat;
 }
 
 .panel-own-photo,
