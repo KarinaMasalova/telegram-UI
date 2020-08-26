@@ -96,6 +96,14 @@ body {
 .opened-dialog-title {
   display: flex;
   padding: var(--header-padding);
+  width: 81%;
+}
+
+.opened-dialog-title:hover,
+.header-search:hover,
+.more:hover {
+  background-color: var(--header-bg-color-hover);
+  cursor: pointer;
 }
 
 .dialog-name p {
@@ -125,7 +133,7 @@ body {
   background-image: url(./src/img/icons/header-search.svg);
   background-repeat: no-repeat;
   background-position: center;
-}
+} 
 
 .more {
   padding: 16px 24px;
@@ -424,11 +432,6 @@ input[type="search"]::-webkit-search-cancel-button {
   color: var(--message-title-color);
   cursor: pointer;
 }
-
-/* FOOTER 
-.footer-line {
-  height: 23px;
-} */
 
 /* media */
 
