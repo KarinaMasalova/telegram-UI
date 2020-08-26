@@ -16,6 +16,7 @@
 
 body {
   background-color: var(--body-bg-color);
+  /* overflow-x: hidden; */
 }
 
 .wrapper {
@@ -295,9 +296,12 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .dialog-message {
+  color: #808080;
+}
+
+.dialog-message p {
   margin-top: 5px;
   font: var(--header-font);
-  color: #808080;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
