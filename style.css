@@ -323,7 +323,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .opened-dialog {
   width: 70%;
-  max-width: 560px;
+  max-width: 57%;
   height: 85vh;
   padding: 0 15px 0 15px;
   margin: 0 auto;
@@ -336,13 +336,13 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .message-block {
   display: flex;
-  margin: 16px 0;
+  margin: 3% 0;
   justify-content: space-between;
   padding-right: 16px;
 }
 
 .message {
-  width: 400px;
+  width: 72%;
 }
 
 .message-title p {
@@ -426,17 +426,26 @@ input[type="search"]::-webkit-search-cancel-button {
   cursor: pointer;
 }
 
+.mobile {
+  display: none;
+}
+
 /* media */
 
-@media (max-width: 654px) {
+@media (max-width: 768px) {
   .burger,
   .tg-logo, 
-  .header-search {
+  .header-search,
+  .dialogs-section,
+  .send-panel-icons,
+  .panel-own-photo,
+  .panel-peer-photo {
     display: none;
   }
 
   .icon-back,
-  .tg-user-photo {
+  .tg-user-photo,
+  .mobile {
     display: flex;
   }
 
@@ -449,8 +458,59 @@ input[type="search"]::-webkit-search-cancel-button {
     width: 95%;
   }
 
+  .opened-dialog {
+    width: 90%;
+    max-width: 100%;
+    height: 100vh;
+  }
+
   .opened-dialog-title {
     flex-direction: column;
     padding: 5px 0;
+  }
+
+  .opened-messages {
+    height: 80%;
+  }
+
+  .send-message-panel {
+    height: 10%;
+  }
+
+  .panel-send {
+    box-shadow: none;
+    padding: 0;
+    background-color: var(--search-panel-bg);
+    border: 1px solid var(--search-panel-bg);
+    min-height: 35px;
+    background-position: 98% 40%;
+  }
+
+  .panel-send::-webkit-input-placeholder {
+    color: #CCC;
+    padding: 0 17% 0 6%;
+  }
+
+  .panel-send:focus {
+    border: 1px solid var(--search-panel-bg);
+    background-color: #fff;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .attachment {
+    width: 35px;
+    height: 30px;
+  }
+
+  .record-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .attachment:hover,
+  .record-icon:hover {
+    cursor: pointer;
+    opacity: .5;
   }
 }
